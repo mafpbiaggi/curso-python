@@ -11,17 +11,19 @@ Este repositório contém exercícios e desafios propostos no curso de Python.
 ```
 curso-python/
 ├── mundo-1/
+│   ├── anotacoes
+│   |   ├── aula07.txt [...]
 │   ├── exercicios
-│   |   ├── ex001.py
-│   ├── desafio1.py
-│   └── desafio3.py
+│   |   ├── ex001.py [...]
+│   ├── aula04-desafio1.py
+│   └── aula04-desafio3.py [...]
 ├── README.md
 ```
 
 ### Observações
 Exercícios e desafios se diferem em razão do momento em que aparecem durante o curso. Existem aulas próprias para exercícios. Nesses casos, os arquivos gerados serão os ex002.py. Já quando há algum exercício proposto durante uma aula de fundamentos/conceitos, eles serão denominados desafios.
 
-As URL das aulas serão apresentadas diretamente nos arquivos como comentários.
+As URL's das aulas estarão presentes no cabeçalho de cada um dos arquivos.
 
 ## Como executar os scripts
 
