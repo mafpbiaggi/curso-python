@@ -19,6 +19,11 @@ curso-python/
 ├── README.md
 ```
 
+### Observações
+Exercícios e desafios se diferem em razão do momento em que aparecem durante o curso. Existem aulas próprias para exercícios. Nesses casos, os arquivos gerados serão os ex002.py. Já quando há algum exercício proposto durante uma aula de fundamentos/conceitos, eles serão denominados desafios.
+
+As URL das aulas serão apresentadas diretamente nos arquivos como comentários.
+
 ## Como executar os scripts
 
 1. Certifique-se de ter o Python instalado.
