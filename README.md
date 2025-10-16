@@ -15,15 +15,16 @@ curso-python/
 │   |   ├── aula07.txt [...]
 │   ├── exercicios
 │   |   ├── ex001.py [...]
+│   ├── desafios
 │   ├── aula04-desafio1.py
-│   └── aula04-desafio3.py [...]
+│   └── aula04-desafio2.py [...]
 ├── README.md
 ```
 
 ### Observações
-Exercícios e desafios se diferem em razão do momento em que aparecem durante o curso. Existem aulas próprias para exercícios. Nesses casos, os arquivos gerados serão os ex002.py. Já quando há algum exercício proposto durante uma aula de fundamentos/conceitos, eles serão denominados desafios.
+A diferença entre 'exercícios' e 'desafios' está relacionada ao momento em que eles são feitos.Os desafios são lançados durante as aulas para que você tente realizar o que é pedido. O exercício é feito pelo professor em outro vídeo específico e nele normalmente é apresentada a solução.
 
-As URL's das aulas estarão presentes no cabeçalho de cada um dos arquivos.
+As URL's dos vídeos estarão presentes no cabeçalho de cada um dos arquivos.
 
 ## Como executar os scripts
 
