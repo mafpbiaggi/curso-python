@@ -1,0 +1,9 @@
+# URL da aula: https://youtu.be/Vw6gLypRKmY?si=QcKURulCNDTIoFzC
+# Título da Aula: Operadores Aritméticos
+
+Informações importantes: Ordem de precedência em operações aritméticas
+
+1. ()
+2. ** (Potência)
+3. *, /, //, % (Multiplicação, Divisão, Resultado Int. da Divisão, Resto da Divisão)
+4. +, - (Soma e Subtração)
