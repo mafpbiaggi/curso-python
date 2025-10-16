@@ -12,8 +12,7 @@ Este repositório contém exercícios e desafios propostos no curso de Python.
 curso-python/
 ├── mundo-1/
 │   ├── exercicios
-│   |   ├── exercicios
-│   |   |   ├── ex001.py
+│   |   ├── ex001.py
 │   ├── desafio1.py
 │   └── desafio3.py
 ├── README.md
