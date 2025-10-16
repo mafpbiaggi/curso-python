@@ -1,4 +1,4 @@
-# Desafio 2:
+# Desafio 2: https://youtu.be/31llNGKWDdo?si=rEhVWGcuLVID6MdP
 # Crie um script Python que leia o dia, o mês e o ano de nascimento de uma pessoa e mostre uma mensagem com a data formatada.
 # Exemplo da saída: "Você nasceu no dia 17 de Mar de 1978."
 

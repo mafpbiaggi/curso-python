@@ -1,4 +1,4 @@
-# Desafio 1:
+# Desafio 1: https://youtu.be/31llNGKWDdo?si=rEhVWGcuLVID6MdP
 # Crie um script Python que leia o nome de uma pessoa e mostre uma mensagem de boas-vindas de acordo com o valor digitado.
 # Exemplo da saída: "Olá %nome%! Prazer em te conhecer!"
 

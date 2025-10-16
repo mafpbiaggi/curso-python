@@ -1,4 +1,4 @@
-# Desafio 3:
+# Desafio 3: https://youtu.be/31llNGKWDdo?si=rEhVWGcuLVID6MdP
 # Crie um script Python que leia dois números e tente mostrar a soma entre eles.
 # Saída esperada: A soma é %resultado%.
 
