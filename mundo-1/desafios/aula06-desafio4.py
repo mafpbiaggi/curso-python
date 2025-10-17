@@ -1,4 +1,4 @@
-# Exercício 4: https://youtu.be/hdDHg1p3YVc?si=r6ANbX0yZ3vT3zUV
+# Exercício 4: https://youtu.be/tHYxjJxtJko?si=EoUaRK3R75Si04Gi
 # Crie um programa que receba um valor do usuário e retorne informações sobre o conteúdo digitado
 # Saídas esperadas:
 
