@@ -1,0 +1,79 @@
+# URL da aula: https://youtu.be/oOUyhGNib2Q?si=rbsyOnlq590upMGZ
+# Título da aula: Utilizando módulos
+
+Um módulo é um programa separado do código principal (em apenas um arquivo) que tem funções específicas.
+
+Por exemplo:
+- Módulo bebida (bebida.py)
+-- Contém as funções: agua, refrigerante, suco, chá, leite.
+
+    # arquivo bebida.py
+    def agua(c):
+        if c == 1:
+          return 'potável'
+
+    def refrigerante(b)
+        if b == 2
+            return 'coca-cola'
+
+Importação de módulos
+
+1. Completo: import bebida
+2. Função específica: from bebida import agua
+3. Funções específicas: from math import sqrt, ceil
+
+Usando a opção 1, o programa em Python carregará todas funções do módulo bebida; Já na opção 2, apenas a função agua será adicionada.
+
+
+Vantagem de se importar apenas uma função
+- Menos utilização de memória.
+
+Biblioteca é um conjunto de módulos, portanto, um pacote com vários arquivos:
+
+bebidas/
+├── agua/
+├── refrigerante/
+├── cha/
+└── ...
+
+Exemplo:
+# Realizar a raíz quadrada de um número usando a biblioteca math
+
+    import math
+    num = int(input('Digite um número: '))
+    raiz = math.sqrt(num)
+    print('A raíz de {} é igual a {:.2f}'.format(num, raiz))
+
+ou
+
+    from math import sqrt
+    num = int(input('Digite um número: '))
+    raiz = sqrt(num) # Não é necessário chamar o método math, basta chamar a função.
+    print('A raíz de {} é igual a {:.2f}'.format(num, raiz))
+
+Documentação de Bibliotecas: https://docs.python.org/3/library/index.html
+
+Algumas bibliotecas não vêem instaladas por padrão no Python, como por exemplo a biblioteca emoji.
+Essa biblioteca imprime emojis no terminal.
+
+Para instalá-la, em um ambiente Python, utilize o comando pip install.
+
+Lembre-se de criar um ambiente interno antes. Por exemplo, no Debian você pode receber a seguinte mensagem:
+
+ This environment is externally managed
+╰─> To install Python packages system-wide, try apt install
+    python3-xyz, where xyz is the package you are trying to
+    install.
+    
+    If you wish to install a non-Debian-packaged Python package,
+    create a virtual environment using python3 -m venv path/to/venv.
+    Then use path/to/venv/bin/python and path/to/venv/bin/pip. Make
+    sure you have python3-full installed.
+    
+    If you wish to install a non-Debian packaged Python application,
+    it may be easiest to use pipx install xyz, which will manage a
+    virtual environment for you. Make sure you have pipx installed.
+    
+    See /usr/share/doc/python3.11/README.venv for more information.
+
+note: If you believe this is a mistake, please contact your Python installation or OS distribution provider. You can override this, at the risk of breaking your Python installation or OS, by passing --break-system-packages.
