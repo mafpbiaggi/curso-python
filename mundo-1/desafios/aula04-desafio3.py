@@ -11,3 +11,7 @@ num2 = int(input("Segundo número:"))
 
 # Exibe o resultado com a conta sendo feita na mesma linha.
 print("A soma é", (num1+num2))
+
+# É possível indexar quais os valores a serem exibidos
+# resultado = num1 + num2
+# print('A soma entre {0} e {1} é igual a {2}'.format(num1, num2, resultado))

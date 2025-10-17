@@ -12,3 +12,6 @@ ano = input("Ano = ")
 
 # Exibe a resposta na tela
 print("Você nasceu no dia", dia, "de", mes, "de", ano + ".")
+
+# Outra forma de exibir (mostrado pelo Gustavo em aula)
+# print('Olá {}! É um prazer te conhecer.'.format(nome))
