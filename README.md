@@ -23,7 +23,7 @@ curso-python/
 ```
 
 ### Observações
-Os desafios são lançados durante as aulas de conceito para que você tente realizá-los. Os exercícios são os desafios corrigidos pelo professor em um vídeo específico para aquele caso. Então, a solução proposta no arquivo 'exercício' será exatamente igual ao do professor no vídeo.
+Durante as aulas, o professor propõe desafios para que os alunos tentem resolver por conta própria. Posteriormente, ele apresenta a solução desses desafios em vídeos específicos, que ficam disponíveis na pasta de exercícios. Assim, os arquivos de exercícios contêm exatamente as soluções ensinadas pelo professor, enquanto os arquivos de desafios são para prática individual.
 
 As URL's dos vídeos estarão presentes no cabeçalho de cada um dos arquivos.
 
