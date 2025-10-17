@@ -1,7 +1,7 @@
 # Projeto - Curso de Python
 
 ## Sobre
-Este repositório contém exercícios e desafios propostos no curso de Python.
+Este repositório contém exercícios propostos no curso de Python.
 
 - **Professor**: Gustavo Guanabara (@gustavoguanabara).
 - **Perfil no GitHub**: https://github.com/gustavoguanabara.
@@ -15,17 +15,14 @@ curso-python/
 │   |   ├── aula07.txt [...]
 │   ├── desafios
 │   |   ├── aula04-desafio1.py
-│   |   ├── aula04-desafio2.py [...]
-│   ├── exercícios
-│   |   ├── ex001.py
-│   └   └── ex002.py [...]
+│   └   └── aula04-desafio2 [...]
 ├── README.md
 ```
 
 ### Observações
-Durante as aulas, o professor propõe desafios para que os alunos tentem resolver por conta própria. Posteriormente, ele apresenta a solução desses desafios em vídeos específicos, que ficam disponíveis na pasta de exercícios. Assim, os arquivos de exercícios contêm exatamente as soluções ensinadas pelo professor, enquanto os arquivos de desafios são para prática individual.
+O curso conta com uma playlist de aulas teóricas e uma playlist de exercícios, no entando, a playlist de exercícios conta com a solução dos desafios lançados durante as aulas téoricas. Portanto, os comentários e correções pertinentes feitos nos vídeos de exercícios serão adicionados aos respectivos arquivos de desafios.
 
-As URL's dos vídeos estarão presentes no cabeçalho de cada um dos arquivos.
+Tanto a URL da aula teórica como da aula prática (exercícios) serão adicionadas ao cabeçalho dos arquivos.
 
 ## Como executar os scripts
 
@@ -34,6 +31,7 @@ As URL's dos vídeos estarão presentes no cabeçalho de cada um dos arquivos.
 3. Execute o arquivo desejado:
    ```bash
    python mundo-1/desafios/aula04-desafio12.py
+   ```
 
 ## Dados do Aluno
 **Nome**: Marco Aurélio Biaggi (@mafbiaggi)  
