@@ -1,0 +1,119 @@
+# URL da aula: https://youtu.be/a7DH88vk2Sk?si=rUEazBnTZtc58I_A
+# Título da aula: Manipulando Texto
+
+Uma cadeia de caracteres é uma palavra ou frase, também chamada de string.
+Toda cadeia de caracteres no Python estará presente em aspas simples ou duplas e é imutável.
+Isso significa que todos os métodos utilizados não alterar a string original, mas geram saídas
+que podem ser armazenadas em variáves.
+
+   Ex: 'Curso em Vídeo Python'
+   Essa é uma string, ou seja, o índice 0 do espaço de memória é usado para o caracter 'C', o índice 1 para o 'u'
+   e assim por diante.
+
+Fatiamento de string
+
+    >>> frase = 'Curso em Vídeo Python'
+    >>> frase[9]
+    'V'
+
+    >>> frase[9:13] # A cadeia vai até o 13, então < 13
+    'Víde'
+
+    >>> frase[9:21:2] # Vai do 9 ao 21 saltando de 2 em 2.
+    'VdoPto'
+
+    >>> frase[:5] # Omissão do caracter inicial, portanto == [início:5]
+    'Curso'
+
+    >>> frase[15:] # Omissão do final, portanto == [15:final]
+    'Python'
+
+    >>> frase[9::3] # Inicia o fatiamento no 9, vai até o final, saltando de 3 em 3
+    'VePh'
+
+Comprimento (Função len())
+
+   >>> len(frase)
+   21
+
+Contador (Método count())
+
+   >>> frase.count('o') # Conta quantos 'o' aparecem na string
+   3
+
+   >>> frase.count('o', 0, 13) # Conta já numa fatia (entre os caracteres 0 e 12)
+   1
+
+Pesquisa (Método find())
+
+   >>> frase.find('deo') # Retorna o índice incial da fatia 'deo', caso encontre.
+   11
+   
+   # Caso não encontre, retorna -1
+
+    'Curso' in frase
+    Retorna True ou False
+
+Transformação
+
+Para isso, podemos usar métodos.
+
+  Ex: Substituir 'Python' por 'Android'
+     >>> frase.replace('Python', 'Android') # Esse método não substitui a string diretamente. Ele gera uma nova saída
+     'Curso em Vídeo Android'
+
+    Upper / Lower / Captalize
+        >>> frase.upper() # Transforma em maiúscula
+        'CURSO EM VÍDEO PYTHON'
+
+        >>> frase.upper().count('O') # Junção de métodos que transformam em contam.
+        3
+
+        >>> frase.lower() # Transforma em minúscula
+        'curso em vídeo python'
+
+        >>> frase.capitalize() # Transforma tudo em minúsculo, depois deixa a primeira letra da string em maiúsculo
+        'Curso em video python'
+
+        >>> frase.title() # Transforma todas as primeiras letras das palavras em maiúsculo
+        'Curso Em Vídeo Python'
+
+    Remoção de espaços antes e depois da string (strip)
+        Frase de Exemplo '   Curso de Vídeo Python  ' Com espaços antes e depois)
+        
+        >>> frase.strip()
+        'Curso em Vídeo Python'
+
+        >>> frase.rstrip() # Remove somente os espaços à direita
+        '   Curso em Vídeo Python'
+
+        >>> frase.lstrip() # Remove somente os espaços à esquerda
+        'Curso em Vídeo Python  '
+
+Divisão (split)
+
+Sem nenhuma opção definida, o split delimita as palavras por espaços vazios, portanto:
+   >>> frase.split()
+   ['Curso', 'em', 'Vídeo', 'Python'] # Retorna lista com as palavras separadas
+
+   >>> frase.split('e') # Separa as palavras delimitando a letra 'e'
+   ['Curso ', 'm Víd', 'o Python']
+
+   Exibição do 2 caracter da primeira palavra da lista
+   >>> frase[0]:[1] (índice 0 do Array, índice 1 é o caracter)
+   'u'
+
+Junção (join)
+
+Unifica palavras de uma lista com o delimitador escolhido
+
+
+
+Dica de uso do comando print para escrever um texto grande e inteiro: Escreva o texto entre 3 aspas duplas.
+
+print("""Uma cadeia de caracteres é uma palavra ou frase, também chamada de string.
+Toda cadeia de caracteres no Python estará presente em aspas simples ou duplas.
+
+   Ex: 'Curso em Vídeo Python'
+   Essa é uma string, ou seja, o índice 0 do espaço de memória é usado para o caracter 'C', o índice 1 para o 'u'
+   e assim por diante.""")
