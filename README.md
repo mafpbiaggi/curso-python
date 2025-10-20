@@ -34,6 +34,7 @@ Tanto a URL da aula teórica como da aula prática (exercícios) serão adiciona
 1. Certifique-se de ter o Python3 instalado.
 2. Navegue até o diretório do projeto.
 3. Execute o arquivo desejado:
+
    ```bash
    python mundo-1/desafios/aula04-desafio12.py
    ```
