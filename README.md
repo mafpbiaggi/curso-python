@@ -14,8 +14,13 @@ curso-python/
 │   ├── anotacoes
 │   |   ├── aula07.txt [...]
 │   ├── desafios
-│   |   ├── aula04-desafio1.py
-│   └   └── aula04-desafio2 [...]
+│   |   ├── aula04
+|   │   |   ├── aula04-desafio1.py [...]
+│   |   ├── aula06
+|   │   |   ├── aula07-desafio4.py
+│   |   ├── aula07 [...]
+|   │   |   ├── aula07-desafio5.py
+|   └   └   └── aula07-desafio6 [...]
 ├── README.md
 ```
 
