@@ -5,14 +5,23 @@
 # Escreva um programa que leia a velocidade de um carro. Se ele ultrapassar 80km/h, mostre
 # uma mensagem dizendo que ele foi multado. A multa vai custar R$7,00 por cada KM acima do limite.
 
+cor = {'0':'\033[m', # Limpa formatação
+       'vm':'\033[31m', # Cor: vermelho
+       'vd':'\033[32m', # Cor: verde
+       'am':'\033[33m', # Cor: amarelo
+       'b':'\033[1m', # Estilo: negrito
+       's':'\033[4m'} # Estilo: sublinhado
+
 v = int(input('Qual é a velocidade do veículo: KM/h = '))
 
 if v > 80:
-    print('Você foi multado.')
-    print('Limite de velocidade: 80 KM/h | Velocidade registrada: {} KM/h'.format(v))
+    print('\n{}{}Você foi multado.{}'.format(cor['b'], cor['vm'], cor['0']))
+    print('{}Limite de velocidade: 80 KM/h{} | {}Velocidade registrada: {} KM/h{}'.format(cor['b'], cor['0'], cor['s'], v, cor['0']))
 
     multa = (v - 80) * 7.00
-    print('Valor da multa: R$ {:.2f}'. format(multa))
+    print('{}Valor da multa: R$ {:.2f}{}'. format(cor['b'], multa, cor['0']))
+
+print('\n{}Boa viagem, dirija com segurança.{}'.format(cor['am'], cor['0']))
 
 # Solução do professor:
 '''

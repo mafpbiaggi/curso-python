@@ -11,10 +11,15 @@ r1 = float(input('Digite o valor da primeira reta: '))
 r2 = float(input('Digite o valor da secunda reta: '))
 r3 = float(input('Digite o valor da terceira reta: '))
 
+cor = {'0':'\033[m', # Limpa formatação
+       'vd':'\033[32m', # Cor: verde
+       'vm':'\033[31m', # Cor: vermelho
+       'b':'\033[1m'} # Estilo: negrito
+
 if r1 + r2 > r3 and r1 + r3 > r2 and r2 + r3 > r1:
-    print('As retas {}, {}, {} podem formar um triângulo.'.format(r1, r2, r3))
+    print('{}As retas {}, {}, {} {}podem formar um triângulo.{}'.format(cor['vd'], r1, r2, r3, cor['b'], cor['0']))
 else:
-    print('As retas {}, {}, {} não podem formar um triângulo.'.format(r1, r2, r3))
+    print('{}As retas {}, {}, {} {}não podem formar um triângulo.{}'.format(cor['vm'], r1, r2, r3, cor['b'], cor['0']))
     
 # Solução do professor:
 '''
