@@ -6,6 +6,7 @@ Este repositório contém exercícios propostos no curso de Python.
 - **Professor**: Gustavo Guanabara (@gustavoguanabara).
 - **Perfil no GitHub**: https://github.com/gustavoguanabara.
 - **Canal do Youtube**: Curso em Vídeo (https://www.youtube.com/@cursoemvideo).
+- **Site**: https://www.cursoemvideo.com/cursos/
 
 ## Estrutura do Projeto
 ```
