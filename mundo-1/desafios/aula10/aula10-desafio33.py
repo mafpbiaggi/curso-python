@@ -1,5 +1,5 @@
 # Desafio 33: https://youtu.be/K10u3XIf1-Q?list=PLHz_AreHm4dlKP6QQCekuIPky1CiwmdI6&t=1819
-# Correção:
+# Correção: https://youtu.be/cyGY_83m4Xw
 
 # Enunciado:
 # Faça um programa que leia três números e mostre qual é o maior e qual é o menor.
@@ -26,3 +26,23 @@ if n3 < men:
     men = n3
 
 print('O menor número é {} e o maior número é {}.'.format(men, mai))
+
+# Solução do professor:
+'''
+a = int(input('Primeiro valor: '))
+b = int(input('Primeiro valor: '))
+c = int(input('Primeiro valor: '))
+# Verificando quem é menor
+menor = a
+if b<a and b<c:
+    menor = b
+if c<a and c<b:
+    menor = c
+# Verificando quem é o maior
+if b>a and b>c:
+    maior = b
+if c>a and c>b:
+    maior = c
+print('O menor valor digitado foi {}'.format(menor))
+print('O maior valor digitado foi {}'.format(maior))
+'''

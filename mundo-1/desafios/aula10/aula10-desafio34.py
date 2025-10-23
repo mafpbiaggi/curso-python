@@ -1,5 +1,5 @@
 # Desafio 34: https://youtu.be/K10u3XIf1-Q?list=PLHz_AreHm4dlKP6QQCekuIPky1CiwmdI6&t=1834
-# Correção:
+# Correção: https://youtu.be/Sfadj_AzKHw
 
 # Enunciado:
 # Escreva um programa que pergunte o salário de um funcionário e calcule o valor do seu aumento.
@@ -14,5 +14,15 @@ a = 15
 if s > 1250:
     a = 10
 
-print('Salário atual: R$ {:.2f} | Reajuste aplicado: {}%'.format(s, a))
-print('Salário reajustado: R$ {:.2f}'.format(s + (s * a/100)))
+print('Salário atual: R$ {:.2f} | Aumento aplicado: {}%'.format(s, a))
+print('Salário aumentado: R$ {:.2f}'.format(s + (s * a/100)))
+
+# Solução do professor:
+'''
+salário = float(input('Qual é o salário do funcionário? R$'))
+if salário <= 1250:
+    novo = salário + (salário * 15 / 100)
+else:
+    novo = salário + (salário * 10 / 100)
+print('Quem ganhava R${:.2f} passa a ganhar R${:.2f} agora.'.format(salário, novo))
+'''

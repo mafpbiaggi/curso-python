@@ -1,5 +1,5 @@
 # Desafio 30: https://youtu.be/K10u3XIf1-Q?list=PLHz_AreHm4dlKP6QQCekuIPky1CiwmdI6&t=1740
-# Correção:
+# Correção: https://youtu.be/4vFCzKuHOn4?si=BsXTv7AFxyaZB7Pz
 
 # Enunciado:
 # Crie um programa que leia um número inteiro e mostre na tela se ele é PAR ou ÍMPAR.
@@ -11,5 +11,14 @@ n = int(input('Digite um número inteiro: '))
 if n % 2 == 0:
     print('O número {} é PAR.'.format(n))
 else:
-    print('O número {} é IMPAR.'.format(n))
+    print('O número {} é ÍMPAR.'.format(n))
     
+# Solução do professor:
+'''
+número = int(input('Me diga um número qualquer: '))
+resultado = número % 2
+if resultado == 0:
+    print('O número {} é PAR'.format(número))
+else:
+    print('O número {} é ÍMPAR'.format(número))
+'''
