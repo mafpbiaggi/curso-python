@@ -22,6 +22,7 @@ curso-python/
 │   |   ├── aula07 [...]
 |   │   |   ├── aula07-desafio5.py
 |   └   └   └── aula07-desafio6 [...]
+├── mundo-2/ [...]
 ├── README.md
 ```
 
