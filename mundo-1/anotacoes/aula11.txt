@@ -1,0 +1,68 @@
+# URL da aula: https://youtu.be/0hBIhkcA8O8
+# Título da aula: Cores no Terminal
+
+Existe um módulo chamado colorsys (pesquisar depois.) 
+
+Nessa aula: Utilização do padrão ANSI escape sequence
+# Todos os comandos começam com \
+
+Representação de cores:
+     Estilo  Texto  Fundo
+\033[0;      33;    44    m]
+
+Estilos:
+- 0: Nenhum
+- 1: Negrito
+- 4: Sublinhado
+- 7: Negativo (inverte cores)
+
+Cores:
+- 30: Branco
+- 31: Vermelho
+- 32: Verde
+- 33: Amarelo
+- 34: Azul
+- 35: Lilás
+- 36: Azul claro
+- 37: Cinza (Cor Padrão)
+
+Fundos
+- 40: Branco
+- 41: Vermelho
+- 42: Verde
+- 43: Amarelo
+- 44: Azul
+- 45: Lilás
+- 46: Azul claro
+- 47: Cinza (Cor Padrão)
+
+Testes:
+Letra branca / Fundo vermelho: \033[0;30;41m
+Letra amarela, sublinhado, fundo azul: \033[4;33;44m
+Letra rosa, bold, fundo amarelo: \033[1;35;43m
+Letra branca / fundo verde: \033[30;42m # Sem padrão de estilo, fica o padrão do terminal
+Letra cinza / fundo preto: \033[m # Padrão do terminal
+Letra preta / fundo branco: \033[7;30m
+
+- Observação:
+Fechar a formatação depois de escrever o print('\033[1;32;43mTEXTO\033[m')
+
+Exercício:
+-- Inline
+print('\033[1;31mOlá Mundo!\033[m')
+
+-- Usando .format
+nome = 'Marco'
+print('Olá {}{}{}, muito prazer em te conhecer.'.format('\033[32m', nome, '\033[m'))
+
+-- Usando uma estrutura
+nome = 'Marco'
+cor = {'0':'\033[m',
+       'azul':'\033[34m',
+       'amarelo':'\033[33m',
+       'vermelho':'\033[31m',
+       'pb':'\033[7;30m'}
+
+print('Olá {}{}{}, muito prazer em te conhecer.'.format(cor['vermelho'], nome, cor['0']))
+
+Desafio: Colocar cores nos exercícios das aulas anteriores.
