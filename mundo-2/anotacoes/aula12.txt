@@ -1,0 +1,30 @@
+# URL da aula: https://youtu.be/j9bYDjaAYzw
+# Título da aula: Condições Aninhadas
+
+Significa colocar estruturas condicionais dentro de estruturas condicionais.
+
+Situação: ter 3 opções de condição
+- Seguir o "caminho" da esquerda, da direita ou do meio.
+
+Então:
+
+    se esquerda # Comando if
+        [...]
+    senao se direita # Comando elif
+        [...]
+    senao # Caminho do meio - Comando else
+        [...]
+    fim 
+
+Prática:
+
+nome = str(input('Qual é o seu nome? ')).strip()
+if nome == 'Gustavo':
+    print('Que nome bonito!')
+elif nome == 'Pedro' or nome == 'Maria' or nome == 'Paulo':
+    print('Seu nome é bem popular no Brasil.')
+elif nome in 'Ana Cláudia Jéssica Juliana':
+    print('Belo nome feminino.')
+else:
+    print('Seu nome é bem normal.')
+print(  Tenha um bom dia, {}!.format(nome))
