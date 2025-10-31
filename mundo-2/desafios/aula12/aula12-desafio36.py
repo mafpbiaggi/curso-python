@@ -1,5 +1,5 @@
 # Desafio 36: https://youtu.be/j9bYDjaAYzw?t=1024
-# Correção:
+# Correção: https://youtu.be/IV13X0QOMU8
 
 # Enunciado:
 # Escreva um programa para aprovar o empréstimo bancário para a compra de uma casa.
@@ -32,3 +32,19 @@ if v_parcela <= v_salario * 0.30:
     print('{}{}Empréstimo APROVADO{}'.format(cor['b'], cor['vd'], cor['0']))
 else:
     print('{}{}Empréstimo REPROVADO{}'.format(cor['b'], cor['vm'], cor['0']))
+
+'''
+Solução do professor:
+
+casa = float(input('Valor da casa: R$'))
+salário = float(input('Salário do comprador: R$'))
+anos = int(input('Quantos anos de financiamento? '))
+prestação = casa / (anos * 12)
+mínimo = salário * 30 / 100
+print('Para pagar uma casa de R${:.2f} em {} anos'.format(casa, anos), end = ' ')
+print('a prestação será de R${:.2f}', format(prestação))
+if prestação <= mínimo:
+    print('Empréstimo pode ser CONCEDIDO.')
+else:
+    print('Empréstimo NEGADO')
+'''

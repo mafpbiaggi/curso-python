@@ -1,6 +1,6 @@
 """
 Desafio 41: https://youtu.be/j9bYDjaAYzw?t=1321
-Correção:
+Correção: https://youtu.be/ZiC5NgSGJXU
 
 Enunciado:
 A Confederação Nacional de Natação precisa de um programa que leia o ano de nascimento
@@ -25,7 +25,26 @@ elif diff > 9 and diff <= 14:
     print('Categoria: INFANTIL')
 elif diff > 14 and diff <= 19:
     print('Categoria: JUNIOR')
-elif diff > 19 and diff <= 20:
+elif diff > 19 and diff <= 25:
     print('Categoria: SÊNIOR')
-elif diff > 20:
+elif diff > 25:
     print('Categoria: MASTER')
+
+'''
+# Solução professor:
+from datetime import date
+atual = date.today().year
+nascimento = int(input('Ano de Nascimento: '))
+idade = atual - nascimento
+print('O atleta tem {} anos.'.format(idade))
+if idade <= 9:
+    print('Classificação: MIRIM.')
+elif idade <= 14:
+    print('Classificação INFANTIL.')
+elif idade <= 19:
+    print('Classificação: JUNIOR.')
+elif idade <= 25:
+    print('Classificação: SÊNIOR.')
+else:
+    print('Classificação: MASTER.')
+'''

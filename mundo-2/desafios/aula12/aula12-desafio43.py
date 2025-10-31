@@ -1,6 +1,6 @@
 """
 Desafio 43: https://youtu.be/j9bYDjaAYzw?t=1420
-Correção:
+Correção: https://youtu.be/b7r34za963I
 
 Enunciado:
 Desenvolva uma lógica que leia o peso e a altura de uma pessoa, calcule seu IMC e
@@ -30,3 +30,21 @@ elif imc >=30 and imc < 40:
     print('IMC = {:.1f} => Obesidade.'.format(imc))
 else:
     print('IMC = {:.1f} => Obesidade mórbida.'.format(imc))
+
+'''
+# Solução do professor:
+peso = float(input('Qual é seu peso? (Kg) '))
+altura = float(input('Qual é sua altura? (m) '))
+imc = peso / (altura ** 2)
+print('O IMC dessa pessoa é de {:.1f}.'.format(imc))
+if imc < 18.5:
+    print('Você está ABAIXO DO PESO normal.')
+elif 18.5 <= imc < 25:
+    print('PARABÉNS, você está na faixa de PESO NORMAL.')
+elif 25 <= imc < 30:
+    print('Você está em SOBREPESO.')
+elif 30 <= imc < 40:
+    print('Você está em OBESIDADE!')
+elif imc >= 40:
+    print('Você está em OBESIDADE MÓRBIDA, cuidado!')
+'''

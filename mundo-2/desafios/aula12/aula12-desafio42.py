@@ -1,6 +1,6 @@
 """
 Desafio 42: https://youtu.be/j9bYDjaAYzw?t=1358
-Correção:
+Correção: https://youtu.be/ZX7sCPjcHA0
 
 Enunciado:
 Refaça o desafio 35 (dos triângulos), acrescentando o recurso de mostrar que tipo de triângulo
@@ -35,3 +35,20 @@ if r1 + r2 > r3 and r1 + r3 > r2 and r2 + r3 > r1:
     print('{}As retas {}, {} e {} podem formar um triângulo {}.{}'.format(cor['vd'], r1, r2, r3, tipo, cor['0']))
 else:
     print('{}As retas {}, {} e {} não podem formar um triângulo.{}'.format(cor['vm'], r1, r2, r3, cor['0']))
+
+'''
+# Solução do professor:
+r1 = float(input('Primeiro segmento: '))
+r2 = float(input('Segundo segmento: '))
+r3 = float(intpu('Terceiro segmento: '))
+if  r1 < r2 + r3 and r2 < r1 + r3 and r3 < r1 + r2:
+    print('Os segmentos acima PODEM FORMAR um triângulo ', end='')
+    if r1 == r2 == r3:
+        print('EQUILÁTERO!')
+    elif r1 != r2 != r3 != r1:
+        print('ESCALENO!')
+    else:
+        print('ISÓSCELES!')
+else:
+    print('Os segmentos acima NÃO PODEM FORMAR triângulo.')
+'''
