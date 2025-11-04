@@ -1,6 +1,6 @@
 '''
 Desafio 52: https://youtu.be/cL4YDtFnCt4?t=1824
-Correção:
+Correção: https://youtu.be/Er5Hyd4LyVw
 
 Enunciado:
 Faça um programa que leia um número inteiro e diga se ele é ou não um número primo.
@@ -25,3 +25,20 @@ if c == 2:
     print('{}O número {} é primo.{}'.format(cor['vd'], n, cor['0']))
 else:
     print('{}O número {} não é primo.{}'.format(cor['vm'], n, cor['0']))
+
+"""
+# Solução do professor:
+núm = int(input('Digite um número: '))
+tot = 0
+for c in range(1, núm + 1):
+    if núm % c == 0:
+        print('\033[33m', end='')
+        tot += 1
+    else:
+        print('\033[31m', end='')
+print('\n\033[mO número {} foi divisível {} vezes'.format(núm, tot))
+if tot == 2:
+    print('E por isso ele É PRIMO!.')
+else:
+    print('E por isso ele NÃO É PRIMO!')
+"""

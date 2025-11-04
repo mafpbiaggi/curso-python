@@ -1,6 +1,6 @@
 '''
 Desafio 53: https://youtu.be/cL4YDtFnCt4?t=1847
-Correção:
+Correção: https://youtu.be/5VBWe6BXzRo
 
 Enunciado:
 Crie um programa que leia uma frase qualquer e diga se ela é um palíndromo,
@@ -15,7 +15,7 @@ Ex: apos a sopa
 print('====== Desafio 53 ======')
 print('É palíndromo?\n')
 
-f = str(input('Digite uma frase: ')).strip()
+f = str(input('Digite uma frase: ')).strip().lower()
 ft = f.replace(' ', '')
 
 f_rev = ''
@@ -26,3 +26,19 @@ if ft == f_rev:
     print('A frase "{}" é um palíndromo.'.format(f))
 else:
     print('A frase "{}" não é um palíndromo.'.format(f))
+
+"""
+# Solução do professor:
+
+frase = str(input('Digite uma frase: ')).strip().upper()
+palavras = frase.split()
+junto = ''.join(palavras)
+inverso = '' # É possível remover o for e substituir por inverso = junto[::-1]
+for letra in range (len(junto) -1, -1, -1):
+    inverso += junto[letra]
+print('O inverso de {} é {}'.format(junto, inverso))
+if inverso == junto:
+    print('Temos um palíndromo!')
+else:
+    print('A frase digita NÃO É um palíndromo!')
+"""

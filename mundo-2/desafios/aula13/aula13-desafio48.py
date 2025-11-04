@@ -1,6 +1,6 @@
 '''
 Desafio 48: https://youtu.be/cL4YDtFnCt4?t=1677
-Correção:
+Correção: https://youtu.be/iHjsUxNA-wo
 
 Enunciado:
 Faça um programa que calcule a soma entre todos os números ímpares que são múltiplos de três
@@ -14,3 +14,15 @@ for n in range(1, 500):
     if n % 2 != 0 and n % 3 == 0:
         s += n
 print('A soma dos números ímpares, divisíveis por 3 entre 1 500 é: {}.'.format(s))
+
+"""
+# Solução do professor:
+
+soma = 0
+cont = 0
+for c in range(1, 501, 2):
+    if c % 3 == 0:
+        cont += 1
+        soma += 1
+print('A soma de todos os {} valores solicitados é {}.'.format(cont, soma)) 
+"""
