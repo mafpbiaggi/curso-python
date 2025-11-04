@@ -1,0 +1,52 @@
+# URL da aula: https://youtu.be/LH6OIn2lBaI
+# Título da aula: Estrutura de repetição while
+
+Estrutura de repetição com teste lógico (while), executa ações até um determinado resultado,
+sem que o programador precise saber a quantidade de vezes que o programa vai repetir.
+
+Exemplo:
+    enquanto não "maçã"
+        passo
+    pega
+
+    while not "maçã":
+        passo
+    pega
+
+Prática
+    
+    - Sabendo o limite de iterações (Parecido com o "for")
+
+        c = 1
+        while c < 10:
+            print(c)
+            c = c + 1 # ou c += 1
+        print('Fim')
+
+    - Não sabendo o limite
+
+        a)
+        n = 1
+        while n != 0: # Condição de parada
+            n = int(input('Digite um valor: '))
+        print('Fim)
+
+        b)
+        r = 'S'
+        while r == 'S':
+            n = int(input('Digite um valor: '))
+            r = str(input('Quer continuar? [S/N] ')).upper()
+        print('Fim')
+
+        c)
+        n = 1
+        par = impar = 0
+        
+        while n != 0:
+            n = int(input('Digite um valor: '))
+            if n != 0:
+                if n % 2 == 0:
+                    par += 1
+                else:
+                    impar += 1
+        print('Você digitou {} números pares e {} números ímpares'.format(par, impar))
