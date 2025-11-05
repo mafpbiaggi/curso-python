@@ -1,0 +1,25 @@
+# URL da aula: https://youtu.be/1OFp_-R2B2A?si=SGrXcOCBBvqcjel8
+# Título da aula: Interrompendo repetições while
+
+O python não tem por padrão o Do While (ou Repeat), mas há uma possibilidade de simulação.
+
+Prática
+
+    - Looping infinito
+
+        s = 0
+        while True:
+            n = int(input('Digite um valor: '))
+            if n == 999:
+                break
+            s += n
+        print('A soma entre os valores é {}'.format(s))
+        
+        # Usando o print com fstring:
+        print(f'A soma entre os valores é {s}')
+
+Observação:
+    Durante a criação do curso (Python 3.6), foi lançada uma nova forma de escrever o print, com uma funcionalidade
+    chamada fstring (modo de interpolação)
+
+    A sintaxe fica: print(f'Texto {variável}. Para variáveis com ponto flutuante: {variável:.2f}')
