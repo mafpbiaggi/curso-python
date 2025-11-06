@@ -1,6 +1,6 @@
 '''
 Desafio 66: https://youtu.be/1OFp_-R2B2A?t=1725
-Correção:
+Correção: https://youtu.be/d2ug6quC1bk
 
 Enunciado: Vários números com flag.
 Crie um programa que leia vários números inteiros pelo teclado. O programa só vai parar quando o usuário digitar 999,
@@ -22,3 +22,16 @@ while True:
 print('\nFim da execução ---- Resultado:')
 print(f'Quantidade de números cadastrados: {cont}.')
 print(f'A soma desses valores é {soma}.')
+
+"""
+# Solução do professor:
+
+soma = cont = 0
+while True:
+    num = int(input('Digite um valor (999 para parar): '))
+    if num == 999:
+        break
+    cont += 1
+    soma += num
+print(f'A soma dos valores foi {soma}')
+"""

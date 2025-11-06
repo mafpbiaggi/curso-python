@@ -1,6 +1,6 @@
 '''
 Desafio 67: https://youtu.be/1OFp_-R2B2A?t=1798
-Correção:
+Correção: https://youtu.be/X0a5aZg93Uc
 
 Enunciado: Tabuada v3.0
 Faça um programa que mostre a tabuada de vários números, um de cada vez, para cada valor digitado
@@ -24,3 +24,17 @@ while True:
     print('-' * 54)
     sleep(.70)
 print('Fim da execução ---- Até mais.\n')
+
+"""
+# Solução do professor:
+
+while True:
+    n = int(input('Quer ver a tabuada de qual valor? '))
+    if n < 0:
+        break
+    print('-' * 30)
+    for c in range(1, 11):
+        print(f'{n} x {c} = {n*c}')
+    print('-' * 30)
+print('PROGRAMA TABUADA ENCERRADO. Volte sempre!')
+"""

@@ -1,6 +1,6 @@
 """
 Desafio 70: https://youtu.be/1OFp_-R2B2A?t=2065
-Correção:
+Correção: https://youtu.be/hS8QdW-1HTo
 
 Enunciado:"""
 sub = ' Estatísticas em Produtos '
@@ -41,7 +41,7 @@ while True:
 
     prox = str(input('Você quer cadastrar mais produtos? [s/n]: ')).strip()
     while prox not in 'SsNn':
-        prox = str(input('\033[33mOpção inválida. Digite novamente [s/n]:\033[m '))
+        prox = str(input('\033[33mOpção inválida. Digite novamente [s/n]:\033[m ')).strip()
     if prox in 'Nn':
         break
 
@@ -49,3 +49,29 @@ print(f'\nEncerrando compra -----\n{c_prod} produtos cadastrados.')
 print(f'O valor total da compra é R$ {tot_compr:.2f}')
 print(f'Quantidade de produtos com valor maior do que R$ 1000,00: {c_m_mil}.')
 print(f'O produto mais barato é "{n_m_barato}", custando R$ {c_m_barato:.2f}.')
+
+"""
+# Solução do professor:
+
+total = totmil = menor = cont = 0
+barato =''
+while True:
+    produto = str(input('Nome do Produto: '))
+    preço = float(input('Preço: R$'))
+    cont += 1
+    total += preço
+    if preço > 1000:
+        totmil += 1
+    if cont == 1 or preço < menor:
+        menor = preço
+        barato = produto
+    resp = ' '
+    while resp not in 'SN':
+        resp = str(input('Quer continuar? [S/N]: ')).strip().upper()[0]
+    if resp == 'N':
+        break
+print('{:-^40}'.format('FIM DO PROGRAMA'))
+print(f'O total da compra foi R${total:.2f}')
+print(f'Temos {totmil} produtos custanto mais de R$ 1000,00')
+print(f'O produto mais barato foi {barato} que custa R${menor:.2f}')
+"""
