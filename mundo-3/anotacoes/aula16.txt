@@ -1,0 +1,95 @@
+# URL da aula: https://youtu.be/0LB3FSfjvao
+# Tìtulo da aula: Variáveis compostas (Tuplas)
+
+Uma variável composta é um tipo de variável que pode armazer mais de um valor.
+
+- Tipo de variáveis compostas:
+    -- Tuplas      => representadas por () => SÃO IMTÁVEIS
+    -- Listas      => representadas por []
+    -- Dicionários => representada por {}
+
+    Exemplo:
+        lanche = Hamburguer, suco, pizza, pudim.
+    
+Cada um dos elementos dessa variável pode ser acessada atraveś de seu índice:
+
+    lanche => Hamburguer, suco, pizza, pudim.
+    Índice =>     0         1     2      3
+
+    Observação: A referência de índice continua sendo feita com [] ainda que seja uma tupla ().
+
+    Exemplo:
+        lanche = ('Hamburguer', 'Suco')
+        print(lanche[1]) => Saída = Suco
+
+As tuplas em Python podem receber elementos de diferentes tipos:
+    Exmeplo:
+        pessoa => ('Gustavo', 39, 'M',  99.88, True)
+        Tipo   =>   str       int  str  float  bool
+
+Exebição
+    - Exibe a tupla completa
+        print(lanche)
+    
+    - Exibe a tupla fatiada
+        print(lanche[0])
+        print(lanche[0:2]) # Apenas índices 0 e 1, o último é sempre o valor - 1
+        print(lanche[1:]) # Exibe do índice 1 até o final
+        print(lanche[-1]) # Exibe o último caracter
+
+Comprimento
+    É possível utilizar o método len() para saber a quantidade de elementos na coleção (ou variável composta).
+
+    Exemplo
+        lanche = Hamburguer, suco, pizza, pudim.
+        len(lanche) => 4
+
+Prática
+    - Exibir todas as comidas dentro da variável composta lanche:
+       -- Sem contador
+            lanche = ("Hamburguer", "Suco", "Pizza", "Pudim")
+            for c in lanche:
+                print(c)
+
+        -- Com contador
+            lanche = ("Hamburguer", "Suco", "Pizza", "Pudim")
+            for c in range(0, len(lanche)):
+                print(lanche[c])
+
+            for cont, comida in enumerate(lanche):
+                print(comida, cont)
+
+    - Concatenar Tuplas
+    -- Atenção: tupla a + b != b + a. A ordem de concatenação importa.
+        a = (2, 5, 4)
+        b = (5, 8, 1, 3)
+        print(a+b) # ou
+
+        c = a + b
+        print(c)
+        
+    - Métodos internos
+    -- count (Quantos números 2 aparecem na concatenação das tuplas a e b?)
+        a = (2, 5, 4)
+        b = (5, 8, 1, 3, 2)
+        c = a + b
+        print(c)
+        print(c.count(2))
+
+    -- index (Retorna a posição do número dentro da tupla)
+    --- Importante: O método index retorna a primeira ocorrência. Caso haja mais de um, utilize o parâmetro de pesquisa.
+        a = (2, 5, 4)
+        b = (5, 8, 1, 3, 2)
+        c = a + b
+        print(c)
+        print(c.index(2)) => Saída 0 (primeiro elemento, neste caso.)
+
+        - parâmetro de pesquisa (deslocamento): Esse parâmetro pesquisa pelo índice do número 2 à partir do índice 1, ou seja, não considerando
+                                 o índice 0 onde está armazenado o primeiro número 2.
+        print(c.index(2, 1)) => Saída 7 (último elemento, neste caso.)
+
+    - Deletar tuplas
+    -- Embora sejam imutáveis, é possível apagar as tuplas usando o comando interno do Python del().
+        pessoa = ('Marco', 39, 'M', 115.10, True)
+        del(pessoa)
+        print(pessoa) # Resulta em erro, pois a variável pessoa não existe mais.
