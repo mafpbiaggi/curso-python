@@ -1,6 +1,6 @@
 '''
 Desafio 77: https://youtu.be/0LB3FSfjvao?t=2997
-Correção:
+Correção: https://youtu.be/8BgSqrOpKvU
 
 Enunciado:'''
 sub = ' Contando Vogais em Tupla '
@@ -31,3 +31,16 @@ for p in tupla:
         if 'u' in p[i]:
             print(f'{p[i]}', end=' ')
 print()
+
+"""
+Solução do professor:
+
+palavras = ('aprender', 'programar', 'linguagem', 'python',
+            'curso', 'gratis', 'estudar', 'praticar',
+            'trabalhar', 'mercado', 'programador', 'futuro')
+for p in palavras:
+    print(f'\nNa palavra {p.upper()} temos ', end='')
+    for letra in p:
+        if letra.lower() in 'aeiou':
+            print(letra, end=' ')
+"""

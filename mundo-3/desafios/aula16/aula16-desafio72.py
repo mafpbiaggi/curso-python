@@ -1,6 +1,6 @@
 '''
 Desafio 72: https://youtu.be/0LB3FSfjvao?t=2601
-Correção:
+Correção: https://youtu.be/ei2Kr3ccfO0
 
 Enunciado:'''
 sub = ' Número por Extenso '
@@ -15,10 +15,29 @@ t_sub = int((52 - len(sub)) / 2)
 print('=' * 19 + ' Desafio 72 ' + '=' * 19)
 print('-' * t_sub + sub + '-' * t_sub)
 
-n_extenso = ('zero', 'um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez', 'onze', 'doze', 'treze', 'quatorze', 'quinze', 'dezesseis', 'dezessete', 'dezoito', 'dezenove', 'vinte')
+n_extenso = ('zero', 'um', 'dois', 'tres', 'quatro', 'cinco',
+            'seis', 'sete', 'oito', 'nove', 'dez',
+            'onze', 'doze', 'treze', 'quatorze', 'quinze',
+            'dezesseis', 'dezessete', 'dezoito', 'dezenove', 'vinte')
 
 n = int(input('\nDigite um número entre 0 à 20: '))
 while n < 0 or n > 20:
     n = int(input('\033[33mValor incorreto, digite novamente (entre 0 e 20):\033[m '))
 
 print(f'O número digitado foi {n_extenso[n]}.')
+
+"""
+# Solução do professor:
+
+cont = ('zero', 'um', 'dois', 'tres', 'quatro',
+        'cinco', 'seis', 'sete', 'oito', 'nove',
+        'dez', 'onze', 'doze', 'treze', 'quatorze',
+        'quinze', 'dezesseis', 'dezessete', 'dezoito',
+        'dezenove', 'vinte')
+while True:
+    núm = int(input('Digite um número entre 0 e 20: '))
+    if 0 <= núm <= 20:
+        break
+    print('Tente novamente.', end=' ')
+print(f'Você digitou o número {cont[núm]}')
+"""

@@ -1,6 +1,6 @@
 '''
 Desafio 75: https://youtu.be/0LB3FSfjvao?t=2841
-Correção:
+Correção: https://youtu.be/1u7oA8ckjAc
 
 Enunciado:'''
 sub = ' Análise de Dados em Tupla '
@@ -24,7 +24,7 @@ for i in range(0, 4):
 
 print(f'\nO número 9 aparece {tup.count(9)} vezes na tupla.')
 
-if tup.count(3) > 0:
+if 3 in tup: # Corrigido usando menos recursos.
     print(f'A primeira ocorrência do número 3 está na posição {tup.index(3)}')
 else:
     print(f'\033[33mO número 3 não foi inserido pelo usuário.\033[m')
@@ -34,3 +34,21 @@ for n in tup:
     if n % 2 == 0:
         print(n, end=' ')
 print()
+
+"""
+# Solução do professor:
+
+núm = (int(input('Digite um número: ')),
+       int(input('Digite outro número: ')),
+       int(input('Digite mais um número: ')),
+       int(input('Digite o último número: ')))
+print(f'O valor 9 apareceu {núm.count(9)} vezes')
+if 3 in núm:
+    print(f'O valor 3 apareceu na {núm.index(3)+1}ª posição')
+else:
+    print('O valor 3 não foi digitado em nenhuma posição')
+print('Os valores pares digitados foram ', end='')
+for n in núm:
+    if n % 2 == 0:
+        print(n, end=' ')
+"""
