@@ -1,0 +1,40 @@
+# URL da aula: https://youtu.be/N1hTsbW50eM?si=Jjz1zplVMOPsptjH
+# Título da aula: Variáveis Compostas [Listas]
+
+As listas são caracterizadas pelos colchetes [], diferente das tuplas que são parênteses ().
+Também diferente das tuplas, as listas não são imutáveis, ou seja, podemos alterá-las ao decorrer do código.
+
+Definição de listas:
+    - Função list(): Ela cria uma lista e pode ser combinada com outras funções
+    
+    Ex: Criação de uma lista com os valores de 0 à 10:
+        valores = list(range(0,11))
+
+        Criação de uma lista vazia:
+        valores = list() ou valores = []
+
+Métodos
+    - lista.append(): Adiciona um elemento ao final da lista.
+    - lista.insert(): Adiciona um elemento em qualquer posição.
+    - lista.remove(): Remove o primeiro elemento encontrado na lista. Esse método recebe o contéudo.
+    - lista.pop(): Remove o último elemento. Esse método recebe o índice.
+    - lista.sort(): Ordena os elementos da lista em ordem crescente.
+      - lista.sort(reverse=True): Ordena os elementos em ordem decrescente.
+
+Prática
+
+    Quando atibuímos uma lista a outra, em Python, há uma relação entre elas, então, quando alteramos um elemento de uma, alteramos nas duas.
+
+        a = [1, 2, 3]
+        b = a
+        # Nesse momento, alteramos o segundo elemento das 2 listas.
+        b[2] = 8
+
+    Criar uma cópia de uma lista:
+
+        a = [1, 2, 3]
+        b = a[:]
+        b[2] = 8
+
+        print(a) => Saída: [1, 2, 3]
+        print(b) => Saída: [1, 2, 8]
