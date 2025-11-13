@@ -1,6 +1,6 @@
 '''
 Desafio 78: https://youtu.be/N1hTsbW50eM?t=1678
-Correção:
+Correção: https://youtu.be/q8Z1cRdJnfk
 
 Enunciado:'''
 sub = ' Maior e menor valores na lista '
@@ -23,7 +23,8 @@ for i in range(0, 5):
 maior = max(lista)
 menor = min(lista)
 
-print(f'\nO maior valor digitado foi {maior} nas posições: {lista.index(maior)}', end='')
+print(f'\nVocê digitou os números: {lista}')
+print(f'O maior valor digitado foi {maior} nas posições: {lista.index(maior)}', end='')
 if lista.count(maior) > 1:
     for n in range(lista.index(maior)+1,len(lista)):
         if lista[n] == maior:
@@ -35,3 +36,32 @@ if lista.count(menor) > 1:
         if lista[n] == menor:
             print(f', {n}', end='')
 print()
+
+'''
+# Solução do professor:
+
+listanum = []
+mai = 0
+men = 0
+for c in range(0, 5):
+    listanum.append(int(input(f'Digite um valor para o Posição {c}: ')))
+    if c == 0:
+        mai = men = listanum[c]
+    else:
+        if listanum[c] > mai:
+            mai = listanum[c]
+        if listanum[c] < men:
+            men = listanum[c]
+print('=-' * 30)
+print(f'Você digitou os valores {listanum}')
+print(f'O maior valor digitado foi {mai} nas posições ', end='')
+for i, v in enumerate(listanum):
+    if v == mai:
+        print('{i}... ', end='')
+print()
+print(f'O menor valor digitado foi {men} nas posições ', end='')
+for i, v in enumerate(listanum):
+    if v == men:
+        print(f'{i}... ', end='')
+print()
+'''

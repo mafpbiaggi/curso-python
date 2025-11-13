@@ -1,6 +1,6 @@
 '''
 Desafio 79: https://youtu.be/N1hTsbW50eM?t=1795
-Correção:
+Correção: https://youtu.be/LkAzRnc_GPk
 
 Enunciado:'''
 sub = ' Valores únicos em uma lista '
@@ -31,10 +31,28 @@ while True:
        
         if resp in 'Nn':
             break
-
     else:   
         print('Número não adicionado. Já está na lista ...')
 
 lista.sort()
 print('\n' + '-' * 52)
 print(f'A lista de números digitados é {lista}.')
+
+'''
+# Solução do professor:
+
+números = list()
+while True:
+    n = int(input('Digite um valor: '))
+    if n not in números:
+        números.append(n)
+        print('Valor adicionado com sucesso...')
+    else:
+        print('Valor duplicado! Não vou adicionar...')
+    r = str(input('Quer continuar? [S/N] '))
+    if r in 'Nn':
+        break
+print('-=' * 30)
+números.sort()
+print(f'Você digitou os valores {números}')
+'''

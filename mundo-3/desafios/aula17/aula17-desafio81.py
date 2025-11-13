@@ -1,6 +1,6 @@
 '''
 Desafio 81: https://youtu.be/N1hTsbW50eM?t=2008
-Correção:
+Correção: https://youtu.be/SXJKAVVlvGA
 
 Enunciado:'''
 sub = ' Extraindo dados da lista '
@@ -29,10 +29,29 @@ while True:
     if resp in 'Nn':
         break
 
-print(f'\nA quantidade de números digitados cadastrados foi: {len(lista)}.')
+print(f'\nA quantidade de números digitados foi: {len(lista)}.')
 lista.sort(reverse=True)
 print(f'A lista em ordem decrescente é {lista}')
 if 5 in lista:
     print(f'O número 5 está na lista.')
 else:
     print(f'O número 5 não foi digitado e não está na lista.')
+
+'''
+# Solução do professor:
+
+valores = []
+while True:
+    valores.append(int(input('Digita um valor: ')))
+    resp = str(input('Quer continuar? [S/N] '))
+    if resp in 'Nn':
+        break
+print('-=' * 30)
+print(f'Você digitou {len(valores)} elementos.')
+valores.sort(reverse=True)
+print(f'Os valores em ordem decrescente são {valores}')
+if 5 in valores:
+    print('O valor 5 faz parte da lista.')
+else:
+    print('O valor 5 não foi encontrado na lista.')
+'''
