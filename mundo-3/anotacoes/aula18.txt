@@ -1,0 +1,27 @@
+# URL da aula: https://youtu.be/YV_JQmZNFsk
+# Título da aula: Listas (parte 2)
+
+Listas dentro de Listas
+
+    dados = ['Marco', 33]
+    pessoas = [['Marco', 33], ['Alyne', 32], ['João', 34]]
+
+    print(pessoas[0][0]) -> ìndice 0 do índice 0: Saída Marco
+    print(pessoas[1][1]) -> índice 1 do índice 1: Saída 32
+    print(pessoas[2][0]) -> índice 2 do índice 0: Saída João
+    print(pessoas[1]) -> índice 1: Saída ['Alyne', 32]
+
+    NUNCA UTILIZAR O MÉTODO APPEND SOMENTE COM O NOME DA LISTA, pois ela cria uma relação entre as listas.
+    Sempre crie uma cópia, utilizando o tamanho da lista [:] ...
+
+        teste = ['Gustavo', 40]
+        galera.append(teste[:])
+        teste = ['Maria', 29]
+        galera.append(teste[:])
+        print(galera) -> Saída [['Gustavo', 40],['Maria', 22]]
+
+    Método clear() limpa a lista.
+        dado = list()
+        dado = ['Marco', 33]
+        galera.append(dado[:])
+        dado.clear()
