@@ -1,6 +1,6 @@
 '''
 Desafio 86: https://youtu.be/YV_JQmZNFsk?t=1673
-Correção:
+Correção: https://youtu.be/EGmlFdwD4C4
 
 Enunciado:'''
 sub = ' Matriz em Python '
@@ -28,3 +28,18 @@ print('Matriz\n')
 for l in m:
     print(f'[{l[0]:^5}][{l[1]:^5}][{l[2]:^5}]')
 print('\n' + '-' * 52)
+
+'''
+# Solução do professor:
+
+matriz = [[0, 0, 0],[0, 0, 0],[0, 0, 0]]
+for l in range(0, 3):
+    for c in range(0, 3):
+        matriz[l][c] = int(input(f'Digite um valor para [{l}{c}]: '))
+
+print('-=' * 30)
+for l in range(0, 3):
+    for c in range(0, 3):
+        print(f'[{matriz[l][c]:^5}]', end='')
+    print()
+'''
