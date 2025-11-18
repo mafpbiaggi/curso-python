@@ -1,0 +1,109 @@
+# URL da aula: https://youtu.be/ZWj8o692qGY
+# Título da aula: Dicionários
+
+Os dicionários são variáveis compostas como as tuplas e listas, mas que permitem índices literais.
+Os nomes dados para os elementos são "Keys" (chaves)
+
+Definição de dicionários:
+    dados = {}
+    dados = dict()
+
+Adicionar elementos no dicionários
+    - Não há o método append. Basta criar o elemento e atribuir valor.
+    Ex:
+        dados = dict()                       => Definição do dicionário vazio.
+        dados = {'nome':'Pedro', 'idade':25} => Atribuição de valores ao dicionário
+        dados['sexo'] = 'M'                  => Adiciona o novo elemento 'sexo' com valor 'M'.
+
+Remover elementos
+    del dados['idade']
+
+Exibição do conteúdo
+    É possível exibir três tipos de contéudos: Vaalores, Chaves e os Itens.
+    Ex:
+        print(filme) -> Exibe o dicionário inteiro
+        >>> {'nome': 'Star Wars', 'ano': 1977, 'diretor': 'George Lucas'}
+
+        print(filme.values()) -> Exibe apenas os valores
+        >>> dict_values(['Star Wars', 1977, 'George Lucas'])
+
+        print(filme.keys()) -> Exibe apenas as chaves
+        >>> dict_keys(['nome', 'ano', 'diretor'])
+
+        print(filme.items()) -> Exibe os itens relacionados (3 tuplas)
+        >>> dict_items([('nome', 'Star Wars'), ('ano', 1977), ('diretor', 'George Lucas')])
+
+Prática
+    - Exibição normal
+        pessoas = {'nome': 'Gustavo', 'sexo': 'M', 'idade': 22}
+        print(f'O {pessoas["nome"] tem {pessoas["idade"] anos.}})
+            >>> O Gustavo tem 22 anos.
+
+    - Exibição com laço
+        pessoas = {'nome': 'Gustavo', 'sexo': 'M', 'idade': 22}
+        for k in pessoas.items():
+            print(k)
+            >>> Gustavo
+                M
+                22
+
+        for k, v in pessoas.items(): // Nesse caso não tem o enumerate. Usa-se o .items()
+            print(f'{k} = {v}')
+            >>> nome = Gustavo            estado = dict()
+            brasil = list()
+
+            for c in range(0, 3):
+                estado['uf'] = str(input('Unidade Federativa: ))
+                estado['sigla'] = str(input('Sigla do Estado': ))
+                brasil.append(estado.copy()) => Utilização do método copy() dos dicionários.
+            for e in brasil:
+                for v in e.values():
+                    print(v, end=' ')
+                print()
+                sexo = M
+                idade = 22
+
+    - Atribuição de valores
+        pessoas = {'nome': 'Gustavo', 'sexo': 'M', 'idade': 22}
+        pessoas['nome'] = 'Leandro'
+        for k, v in pessoas.items(): // Nesse caso não tem o enumerate. Usa-se o .items()
+            print(f'{k} = {v}')
+            >>> nome = Leandro
+                sexo = M
+                idade = 22
+
+        pessoas = {'nome': 'Gustavo', 'sexo': 'M', 'idade': 22}
+        pessoas['peso'] = 98.5
+        for k, v in pessoas.items(): // Nesse caso não tem o enumerate. Usa-se o .items()
+            print(f'{k} = {v}')
+            >>> nome = Leandro
+                sexo = M
+                idade = 22
+                peso = 98.5
+
+    - Juntando variáveis compostas
+        - Atribuição manual
+            brasil = []
+            estado1 = {'uf':'Rio de Janeiro', 'sigla':'RJ'}
+            estado2 = {'uf':'São Paulo', 'sigla':'SP'}
+            brasil.append(estado1)
+            brasil.append(estado2)
+
+            print(brasil[0]['uf'])
+            >>> Rio de Janeiro
+
+            print(brasil[1]['sigla'])
+            >>> SP
+        
+        - Atribuição com iteração
+            estado = dict()
+            brasil = list()
+
+            for c in range(0, 3):
+                estado['uf'] = str(input('Unidade Federativa: ))
+                estado['sigla'] = str(input('Sigla do Estado': ))
+                brasil.append(estado.copy()) => Utilização do método copy() dos dicionários.
+            for e in brasil:
+                for v in e.values():
+                    print(v, end=' ')
+                print()
