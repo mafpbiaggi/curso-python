@@ -1,0 +1,100 @@
+# URL da aula: https://youtu.be/ezfr9d7wd_k
+# Título da aula: Funções (parte 1)
+
+Funções são rotinas constantes.
+
+Existem funções internas (print, len, int, input, etc), mas também existem funções personalizadas (def's)
+
+Observações:
+    1) A passagem de parâmetros de uma função é feita por referência no Python, diferente de outras linguagens
+       que é feita por valor.
+
+Prática:
+    - Exemplo 1: Criação de uma função de exibição de cabeçalhos (mensagens):
+        # Função
+        def divSession(txt):
+            print('-' * 60)
+            print(f'{txt:^60}')
+            print('-' * 60)
+
+        # Programa principal. Deixar duas linhas vazias entre as funções e o main.
+        a = 'Texto dentro da variável'
+        divSession(a) => É possível enviar uma variável como parâmetro
+        divSession('Fim do Programa') # Ou então digitar o texto como parâmetro
+    
+    - Exemplo 2: Criação de uma função de soma de dois elementos
+        def soma(a, b):
+            print(a + b)
+
+
+        soma(2, 3)
+        >>> 5
+
+        soma(3, 9)
+        >>> 12
+
+        soma(4, 12)
+        >>> 16
+
+    - Empacotamento e desempacotamento de parâmetros
+
+        Utilizar o * (asterísco) como caracter coringa na definição da função. O python transformará todos os parâmetros em uma tupla.
+        Por exemplo, uma função que conte elementos (parâmetros passados).
+
+        - Exemplo 3: Contagem de parâmetros indefinidos de uma função:
+            
+            def contaParam(* param): # A função conta os elementos na unha, mas é possível usar a função len() para saber o tamanho da tupla.
+                t_param = 0
+                for p in param:
+                    t_param += 1
+                print(f'A função recebeu {t_param} parâmetros. São eles {param}')
+
+
+            # Main
+            contaParam(9, 7, 5, 1, 'a')
+            >>> A função recebeu 5 parâmetros. São eles (9, 7, 5, 1, 'a')
+
+            contaParam(9, 7)
+            >>> A função recebeu 2 parâmetros. São eles (9, 7)
+
+            contaParam(5, 1, 'x')
+            >>> A função recebeu 3 parâmetros. São eles (5, 1, 'x')
+
+
+            - Exemplo 4: Somar N elementos passados para função:
+
+                def soma(* elemnt):
+                    s = 0
+                    for e in elemnt:
+                        s += e
+                    print(f'A soma dos valores {elemnt} é {s}')
+
+
+                soma(2, 3)
+                >>> A soma dos valores (2, 3) é 5
+
+                soma(4, 6, 12)
+                >>> A soma dos valores (4, 6, 12) é 22
+
+                soma(1, 9, 14, 100)
+                >>> A soma dos valores (1, 9, 14, 100) é 124
+
+    
+    - Exemplo 5: Atualização de valores dentro de uma lista:
+
+            # Definição da função que recebe a lista como parâmetro
+            def dobra(lst):
+            p = 0
+            while p < len(lst):
+                lst[p] *= 2
+                p += 1
+
+
+            # Main
+            valores = [7, 2, 5, 0, 4]
+            print(valores) # Exibe os valores da lista antes de qualquer alteração
+            >>> [7, 2, 5, 0, 4]
+
+            dobra(valores) # Faz a chamada de função passando a lista valores como parâmetro
+            print(valores) # Exibe o valor da lista após a execução da função
+            >>> [14, 4, 10, 0, 8]
