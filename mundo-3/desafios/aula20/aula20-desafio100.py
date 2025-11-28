@@ -9,16 +9,34 @@ sub = 'Funções para sortear e somar'
 Enunciado:
 Faça um programa que tenha uma lista chamada números e duas funções chamadas sorteia() e somaPar().
 A primeira vai sortear 5 números e vai colocá-los dentro da lista e a segunda função vai mostrar
-a soma entre totos os valores pares sorteados pela função anterior.
+a soma entre todos os valores pares sorteados pela função anterior.
 '''
 
-def titulo(t, s):
-    print('=' * 60)
-    print(f'{t:^60}')
-    print('-' * 60)
-    print(f'{s:^60}')
-    print('-' * 60)
+from time import sleep
+from random import randint
+
+def sorteia(num):
+    print('\nSorteando 5 números entre 1 e 20 ...', end=' ')
+    for c in range (0, 5):
+        n = randint(1, 20)
+        print(f'{n}', end=' ', flush=True)
+        sleep(0.5)
+        num.append(n)
     print()
 
+def somaPar(num):
+    s = 0
+    for n in num:
+        if n % 2 == 0:
+            s += n
+    print(f'A soma dos valores pares contidos em {num}, é {s}.')
 
-titulo('Desafio 100', sub)
+print('=' * 60)
+print(f'{"Desafio 100":^60}')
+print('-' * 60)
+print(f'{sub:^60}')
+print('-' * 60)
+
+numeros = list()
+sorteia(numeros)
+somaPar(numeros)

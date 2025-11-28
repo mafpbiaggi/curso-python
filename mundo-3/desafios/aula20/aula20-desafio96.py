@@ -19,5 +19,13 @@ def titulo(t, s):
     print('-' * 60)
     print()
 
+def area(l, c):
+    a = l*c
+    print(f'\nA área do terreno ({l:.2f}m x {c:.2f}m) é {a:.2f}m²')
+
 
 titulo('Desafio 96', sub)
+lar = float(input('Digite a largura do terreno (m): '))
+com = float(input('Digite o comprimento do terreno (m): '))
+
+area(lar, com)

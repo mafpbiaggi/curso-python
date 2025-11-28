@@ -25,5 +25,14 @@ def titulo(t, s):
     print('-' * 60)
     print()
 
+def escreva(txt):
+    f_len = len(txt) + 10
+
+    print()
+    print('~' * f_len)
+    print(f'{txt:^{f_len}}')
+    print('~' * f_len)
+
 
 titulo('Desafio 97', sub)
+escreva(str(input('Digite um texto qualquer: ')).strip())
