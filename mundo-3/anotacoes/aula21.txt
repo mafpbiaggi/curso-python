@@ -1,0 +1,187 @@
+# URL da aula: https://youtu.be/etjJ_4Eqrk8
+# Título da aula: Funções (parte 2)
+
+Tópicos abordados:
+
+    - Interactive help
+    - Docstrings
+    - Argumentos opcionais
+    - Escopo de variáveis
+    - Funções que retornam resultados
+
+ 1) Ajuda interativa (Interactive Help)
+
+    Função interna para um utilitário de documentação.
+
+    - Chamada da função via console:
+
+        >>> help()
+        Welcome to Python 3.11's help utility!
+
+        If this is your first time using Python, you should definitely check out
+        the tutorial on the internet at https://docs.python.org/3.11/tutorial/.
+
+        Enter the name of any module, keyword, or topic to get help on writing
+        Python programs and using Python modules.  To quit this help utility and
+        return to the interpreter, just type "quit".
+
+        To get a list of available modules, keywords, symbols, or topics, type
+        "modules", "keywords", "symbols", or "topics".  Each module also comes
+        with a one-line summary of what it does; to list the modules whose name
+        or summary contain a given string such as "spam", type "modules spam".
+
+        help> 
+    
+    - Exemplo: Verificar o manual para o comando 'input':
+
+        help> input
+
+        Help on built-in function input in module builtins:
+
+        input(prompt='', /)
+            Read a string from standard input.  The trailing newline is stripped.
+            
+            The prompt string, if given, is printed to standard output without a
+            trailing newline before reading input.
+            
+            If the user hits EOF (*nix: Ctrl-D, Windows: Ctrl-Z+Return), raise EOFError.
+            On *nix systems, readline is used if available.
+    
+    - Chamada da função por aquivo:
+    
+        Dentro de um arquivo .py:
+
+            help(print) # ou
+            print(print.__doc__)
+
+        As duas chamadas (utilizando função, ou método __doc__), exibem o manual para o comando interno 'print'.
+
+    - Sair do modo interativo:
+
+        help> quit
+
+2) Docstrings
+
+    É uma string de documentação. Ou seja, é o conteúdo que a função help() retorna para cada um dos comandos ou funções.
+
+    Para criar uma docstring, adicione o texto de documetanção após a definição da função, dentro de aspas duplas 3 vezes ("""):
+
+        - Exemplo:
+
+            def contador(i, f, p):
+                """
+                    -> Faz uma contagem e mostra na tela.
+                    :param i: Início da contagem
+                    :param f: Fim da contagem
+                    :param p: Passo da contagem
+                    :return: Sem retorno
+                """
+                c = i
+                while c <= f:
+                    print(f'{c}', end='')
+                    c += p
+                print()
+
+
+            help(contador)
+
+            - Saída
+
+            >>> Help on function contador in module __main__:
+
+                contador(i, f, p)
+                    -> Faz uma contagem e mostra na tela.
+                    :param i: Início da contagem
+                    :param f: Fim da contagem
+                    :param p: Passo da contagem
+                    :return: Sem retorno
+
+3) Parâmetros opcionais
+
+    Diferente de quando não sabemos quantos valores serão adicionados como parâmetros (múltiplos), nesse caso, eu indico um (ou mais)
+    dos parâmetros como opcional definindo seu valor na declaração da função.
+
+    - Exemplo: Criação de uma função que soma até 3 valores:
+
+        def somar(a, b, c=0): # Atribuição do valor 0 para a variável c.
+            s = a + b + c
+            print(f'A soma dos valores é {s}.')
+
+
+        somar(3, 2, 5)
+
+4) Escopo de variáveis
+
+    Definição de escopo, ou seja, onde as variáveis existem ou não existem.
+
+        - Escopo Global: Existem em todo o programa. Precisa ter sido criada fora de uma função.
+        - Escopo Local: Existem apenas dentro do bloco em que foi definida. Criada dentro da função, por exemplo.
+
+        Observação: Nomenclatura de parâmetros ...
+
+            - Na definição/atribuição da função, os parâmetros são chamados de formais.
+            def funcao (a, b): # Portanto, a e b são parâmetros formais.
+
+            - Já na chamada da função, no programa principal, os parâmetros são chamado de reais.
+            funcao(2, 4) # Portanto, 2 e 4 são parâmetros reais.
+
+    É possível ter uma variável chamada 'a' tanto global, como local com valores diferentes.
+
+        - Exemplo: Variável 'a' em dois escopos
+
+            def teste():
+                a = 1
+                print(f'O valor local (dentro da função teste) de "a" é {a}.')
+
+
+            a = 2
+            teste()
+            print(f'O valor global (fora da função teste) de "a" é {a}.')
+
+    Para atualizar o valor da variável, ou seja, no programa principal ela passará a ter o mesmo valor de dentro da função
+    é necessário usar o comando global.
+
+        - Exemplo: Variável 'a' global passa a valer 1 ao invés de 2
+
+            def teste():
+                global a
+                a = 1
+                print(f'O valor local (dentro da função teste) de "a" é {a}.')
+
+
+            a = 2
+            teste()
+            print(f'O valor global (fora da função teste) de "a" é {a}.')
+
+5) Retorno de valores
+
+    Como o nome diz, é conteúdo que uma função retorna como resposta.
+
+        def somar(a=0, b=0, c=0):
+        s = a + b + c
+        return s
+
+
+        r1 = somar(4, 5, 21)
+        r2 = somar(1, 2)
+        r3 = somar(12)
+
+        print(f'Os resultados foram {r1}, {r2} e {r3}.')
+    
+Prática
+
+    - Criar o fatorial de um número e retornar o valor para o programa principal.
+
+        def fatorial(n=1):
+            f = 1
+            for c in range(n, 0, -1):
+                f *= c
+            return f
+
+
+        f1 = fatorial(5)
+        f2 = fatorial(4)
+        f3 = fatorial()
+
+        print(f'Os valores são {f1}, {f2} e {f3}.')
+        
