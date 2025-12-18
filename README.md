@@ -43,5 +43,5 @@ Tanto a URL da aula teórica como da aula prática (exercícios) serão adiciona
    ```
 
 ## Dados do Aluno
-**Nome**: Marco Aurélio Biaggi (@mafbiaggi)  
+**Nome**: Marco Aurélio Biaggi ([@mafpbiaggi](https://github.com/mafpbiaggi))
 **E-mail**: mafpbiaggi@gmail.com
