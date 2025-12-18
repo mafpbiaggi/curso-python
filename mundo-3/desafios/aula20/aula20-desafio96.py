@@ -1,6 +1,6 @@
 '''
 Desafio 96: https://youtu.be/ezfr9d7wd_k?t=2445
-Correção: 
+Correção: https://youtu.be/oV1s53YGtvE
 
 '''
 sub = 'Função que calcula área'
@@ -29,3 +29,18 @@ lar = float(input('Digite a largura do terreno (m): '))
 com = float(input('Digite o comprimento do terreno (m): '))
 
 area(lar, com)
+
+'''
+# Solução do professor:
+
+def  área(larg, comp):
+    a = larg * comp
+    print(f'A área de um terreno {larg}x{comp} é de {a}m².')
+
+
+print(' Controle de Terrenos')
+print('-' * 20)
+l = float(iinput('LARGURA (m): '))
+c = float(input('COMPRIMENTO (m): '))
+área(l, c)
+'''

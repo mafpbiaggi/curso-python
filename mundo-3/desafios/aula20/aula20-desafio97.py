@@ -1,6 +1,6 @@
 '''
-Desafio 96:  https://youtu.be/ezfr9d7wd_k?t=2503
-Correção: 
+Desafio 97:  https://youtu.be/ezfr9d7wd_k?t=2503
+Correção: https://youtu.be/Q6basnSo7r0
 
 '''
 sub = 'Um print especial'
@@ -36,3 +36,19 @@ def escreva(txt):
 
 titulo('Desafio 97', sub)
 escreva(str(input('Digite um texto qualquer: ')).strip())
+
+'''
+# Solução do professor:
+
+def escreva(msg):
+    tam = len(msg) + 4
+    print('~' * tam)
+    print(f'  {msg}')
+    print('~' * tam)
+
+
+# Programa Principal
+escreva('Gustavo Guanabara')
+escreva('Curso de Python no YouTube')
+escreva('CeV')
+'''

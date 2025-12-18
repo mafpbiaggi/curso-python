@@ -1,6 +1,6 @@
 '''
 Desafio 99: https://youtu.be/ezfr9d7wd_k?t=2780 
-Correção: 
+Correção: https://youtu.be/vp9UX7wr92o
 
 '''
 sub = 'Função que descobre o maior'
@@ -15,6 +15,7 @@ Caso não haja parâmetros, a função retorna 0 como maior valor.
 Usar o flush para a função sleep (Vide exercício do Joken Pô).
 '''
 from time import sleep
+
 
 def loading():
     for i in range(0, 3):
@@ -55,3 +56,32 @@ maior(4, 0, 7)
 maior(1, 2)
 maior(2000,1)
 maior()
+
+'''
+# Solução do professor:
+from time import sleep
+
+
+def maior(* núm):
+    cont = maior = 0
+    print('-=' * 30)
+    print('Analisando os valores passados... ')
+    for valor in núm:
+        print(f'{valor} ', end='', flush=True)
+        sleep(0.3)
+        if cont == 0:
+            maior = valor
+        else:
+            if valor > maior:
+                maior = valor
+        cont += 1
+    print(f'Foram informados {cont} valores ao todo.')
+
+
+# Programa Principal
+maior(2, 9, 4, 5, 7, 1)
+maior(4, 7, 0)
+maior(1, 2)
+maior(6)
+maior()
+'''
