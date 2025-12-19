@@ -20,3 +20,26 @@ Exemplo:
 
     >>> O jogador <desconhecido> fez 0 gol(s) no campeonato.
 '''
+
+def ficha(n, g):
+    if n == '':
+        n = '<desconhecido>'
+    
+    if g.isnumeric() == False:
+        g = 0
+
+    return print(f'\nO jogador {n} fez {g} gol(s) no campeonato.')
+
+
+# Main
+print('=' * 60)
+print(f'{"Desafio 103":^60}')
+print('-' * 60)
+print(f'{sub:^60}')
+print('-' * 60)
+
+nome = str(input('Digite o nome do jogador: ')).strip()
+gols = input('Digite o número de gols: ')
+
+ficha(nome, gols)
+print('=' * 60)

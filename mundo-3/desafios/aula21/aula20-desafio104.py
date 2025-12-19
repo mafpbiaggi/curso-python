@@ -14,3 +14,24 @@ Enquanto um valor inteiro não for inserido, o programa continua pedindo um valo
 
 Ex: n = leiaInt('Digite um n' )
 '''
+
+def leiaInt(msg):
+    valor = input(msg)
+    
+    print()
+    while valor.isnumeric() == False:
+        valor = input('Valor inválido. Digite um valor inteiro: ')
+    
+    return int(valor)
+        
+
+# Main
+print('=' * 60)
+print(f'{"Desafio 104":^60}')
+print('-' * 60)
+print(f'{sub:^60}')
+print('-' * 60)
+
+n = leiaInt('Digite um valor para "n": ')
+print(f'\nO valor digitado foi: {n} do tipo {type(n)}.')
+print('=' * 60)
