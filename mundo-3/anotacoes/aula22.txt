@@ -1,0 +1,65 @@
+# URL da aula: https://youtu.be/s3r8_Aug4y8
+# Título da aula: Módulos e Pacotes
+
+Tópicos abordados:
+- Modularização
+- Pacotes
+
+1) Modularização
+É o conceito de construir módulos, ou seja, dividir um programa grande em pequenos pedaços.
+
+ Vantagens:
+    - Aumentar a legibilidade
+    - Facilitar a manutenção
+    - Organizar o código
+    - Ocultar o código detalhado
+    - Reutilzar em outros projetos
+
+Basta dividir os conteúdos dos programas em arquivos diferentes e, depois, importá-los no main.
+
+Estrutura:
+exemplo/
+├── main.py
+└── func.py
+
+# Arquivo main.py
+import func # ou from func import dobro
+num = int(input('Digite um número: '))
+print(f'O dobro de {num} é {func.dobro(num)}.')
+
+# Arquivo functions.py
+def dobro(n):
+    d = n * 2
+    return d
+
+Observação:
+
+    Ao importar um módulo, o ideal é importar todas as bibliotecas (funções) para evitar conflitos de nome,
+    ou seja, evitar que existam duas funções chamadas dobro em bíbliotecas diferentes.
+
+    Por padrão, caso duas funções de mesmo nome sejam importadas e não haja chamada correta no
+    código (mod.função()), o Python executa a última importada.
+
+2) Pacotes
+Quando os módulos começam a ficar muito grande, os pacotes devem ser utilizados.
+Outras linguagens utilizam o nome biblioteca, mas o Python as chama de pacotes.
+
+Um pacote é a organização de módulos por assunto, por exemplo.
+
+pacote/
+├── números/
+| ├── __init__.py
+│ | ├── xyz() # Função xyz (Dentro do arquivo __init__.py)
+│ └ └── xpto() # Função xpto
+├── strings/
+| ├── __init__.py
+│ | ├── ashdas() # Função ashdas (Dentro do arquivo __init__.py)
+│ └ └── uiuoiu() # Função uiuoiu
+├── datas/
+| ├── __init__.py
+│ | ├── nmnb() # Função nmnb (Dentro do arquivo __init__.py)
+│ └ └── qweq() # Função qweq
+|── cores/
+| ├── __init__.py
+| | ├── opaos() # Função opaos (Dentro do arquivo __init__.py)
+└ └ └── oiuqwieu() # Função oiuqwieu
