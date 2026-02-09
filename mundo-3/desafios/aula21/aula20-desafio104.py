@@ -1,6 +1,6 @@
 '''
 Desafio 104: https://youtu.be/etjJ_4Eqrk8?t=2631
-Correção: 
+Correção: https://youtu.be/VrQmMbPpbf0
 
 '''
 sub = 'Validando entrada de dados em Python'
@@ -35,3 +35,25 @@ print('-' * 60)
 n = leiaInt('Digite um valor para "n": ')
 print(f'\nO valor digitado foi: {n} do tipo {type(n)}.')
 print('=' * 60)
+
+'''
+# Solução do Professor:
+
+def leiaInt(msg):s
+    ok = False
+    valor = 0
+    while True:
+        n = str(input(msg))
+        if n.isnumeric():
+            valor = int(n)
+            ok = True
+        else:
+            print('\033[0;31mERRO! Digite um número inteiro válido.\033[m')
+        if ok:
+            break
+    return valor
+
+# Programa prinicipal
+n = leiaInt(input('Digite um número: '))
+print(f'Você acabou de digitar o número {n}')
+'''

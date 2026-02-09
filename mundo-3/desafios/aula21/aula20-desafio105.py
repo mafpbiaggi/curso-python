@@ -1,6 +1,6 @@
 '''
 Desafio 105: https://youtu.be/etjJ_4Eqrk8?t=2692
-Correção: 
+Correção: https://youtu.be/Kbs97l38vVQ
 
 '''
 sub = 'Analisando e gerando dicionários'
@@ -68,5 +68,35 @@ print(notas(5.5, 9, 8.5, 10))
 print(notas(1, 3, 6.5, sit=True))
 print(notas(1, 3, 6.5, sit=False))
 print(notas(2, 3, 1.75, 5.5, 9, 8.5, 8.25, sit=True))
-print(help(notas))
+help(notas)
 print('=' * 100)
+
+'''
+# Solução do Professor:
+
+def notas(*n, sit=False):
+    """
+    -> Função para analisar notas e situações de vários alunos.
+    :param n: uam ou mais notas dos alunos (aceita várias)
+    :param sit: valor opcional, indicando se deve ou não adicionar a situação
+    :return: dicionário com várias informações sobre a situação da turma.
+    """
+    r = dict()
+    r['total'] = len(n)
+    r['maior'] = max(n)
+    r['menor'] = min(n)
+    r['média'] = sum(n)/len(n)
+    if sit:
+        if r['media'] >= 7:
+            r['situação'] = 'BOA'
+        elif r['média'] >= 5:
+            r['situação'] = 'RAZOÁVEL'
+        else:
+            r['situação'] = 'RUIM'
+    return r
+
+
+# Programa principal
+resp = notas(5.5, 2.5, 9, 8.5)
+print(resp)
+'''

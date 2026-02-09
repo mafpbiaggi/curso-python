@@ -1,6 +1,6 @@
 '''
 Desafio 103: https://youtu.be/etjJ_4Eqrk8?t=2574
-Correção: 
+Correção: https://youtu.be/FbOvilKfHMI
 
 '''
 sub = 'Ficha do jogador'
@@ -43,3 +43,21 @@ gols = input('Digite o número de gols: ')
 
 ficha(nome, gols)
 print('=' * 60)
+
+'''
+# Solução do Professor:
+
+def ficha(jog='<desconhecido>', gol=0):
+    print(f'O jogador {jog} fez {gol} gol(s) no campeonato.')
+
+n = str(input('Nome do jogador: '))
+g = str(input('Número de gols: '))
+if g.isnumeric():
+    g = int(g)
+else:
+    g = 0
+if n.strip() == '':
+    ficha(gol=g)
+else:
+    ficha(n, g)
+'''
