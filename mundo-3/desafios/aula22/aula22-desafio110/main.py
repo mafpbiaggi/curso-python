@@ -26,10 +26,14 @@ Metade do preço: R$ 25,00
 35% de redução:  R$32,50
 ---------------------------
 '''
+from moeda import resumo
 
 # Main
 print('=' * 60)
-print(f'{"Desafio 107":^60}')
+print(f'{"Desafio 110":^60}')
 print('-' * 60)
 print(f'{sub:^60}')
 print('-' * 60)
+
+num = float(input('Digite um valor: '))
+resumo(num, 35, 10)

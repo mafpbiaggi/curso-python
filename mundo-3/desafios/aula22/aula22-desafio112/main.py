@@ -15,9 +15,14 @@ O programa deve aceitar números com vírgula também, além de números com pon
 as casas decimais.
 '''
 
+from utilidadesCev import moeda, dado
+
 # Main
 print('=' * 60)
-print(f'{"Desafio 107":^60}')
+print(f'{"Desafio 112":^60}')
 print('-' * 60)
 print(f'{sub:^60}')
 print('-' * 60)
+
+num = dado.leiaDinheiro('Digite um preço: ')
+moeda.resumo(num, 87, 22)

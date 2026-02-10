@@ -14,9 +14,14 @@ Transfira todas as funções utilizadas nos desafios 107, 108, 109, 110 para o
 primeiro pacote e mantenha tudo funcionando.
 '''
 
+from utilidadesCev import moeda
+
 # Main
 print('=' * 60)
-print(f'{"Desafio 107":^60}')
+print(f'{"Desafio 111":^60}')
 print('-' * 60)
 print(f'{sub:^60}')
 print('-' * 60)
+
+num = float(input('Digite um valor: '))
+moeda.resumo(num, 35, 10)
