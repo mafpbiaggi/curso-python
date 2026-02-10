@@ -1,6 +1,6 @@
 '''
 Desafio 110:  https://youtu.be/s3r8_Aug4y8?t=1899
-Correção: 
+Correção: https://youtu.be/1Ks218WINT8
 
 '''
 sub = ''
@@ -37,3 +37,11 @@ print('-' * 60)
 
 num = float(input('Digite um valor: '))
 resumo(num, 35, 10)
+
+'''
+# Solução do Professor:
+
+from moeda import resumo
+p = float(input('Digite o preço: R$'))
+moeda.resumo(p)
+'''

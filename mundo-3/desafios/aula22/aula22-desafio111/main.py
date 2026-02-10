@@ -1,6 +1,6 @@
 '''
 Desafio 111: https://youtu.be/s3r8_Aug4y8?t=1984
-Correção: 
+Correção: https://youtu.be/uBQ0--sRFUI
 
 '''
 sub = ''
@@ -25,3 +25,11 @@ print('-' * 60)
 
 num = float(input('Digite um valor: '))
 moeda.resumo(num, 35, 10)
+
+'''
+# Solução do Professor:
+
+from utilidadesCev import noeda
+p = float(input('Digite o preço: R$'))
+moeda.resumo(p, 20, 12)
+'''

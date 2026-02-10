@@ -1,6 +1,6 @@
 '''
 Desafio 112: https://youtu.be/s3r8_Aug4y8?t=2054
-Correção: 
+Correção: https://youtu.be/6vADeY5_pMs
 
 '''
 sub = ''
@@ -26,3 +26,13 @@ print('-' * 60)
 
 num = dado.leiaDinheiro('Digite um preço: ')
 moeda.resumo(num, 87, 22)
+
+'''
+# Solução do Professor:
+
+from utilidadesCev import noeda
+from utilidadesCev import dado
+
+p = dado.leiaDinheiro(input('Digite o preço: R$'))
+moeda.resumo(p, 20, 12)
+'''

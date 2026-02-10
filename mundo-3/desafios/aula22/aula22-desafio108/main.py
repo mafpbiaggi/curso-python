@@ -1,6 +1,6 @@
 '''
 Desafio 108: https://youtu.be/s3r8_Aug4y8?t=1728
-Correção: 
+Correção: https://youtu.be/KtRkGEeUdqE
 
 '''
 sub = 'Formatando Moedas em Python'
@@ -24,3 +24,12 @@ print(f'\nA metade de {moeda.moeda(num)} é {moeda.moeda(moeda.metade(num))}.')
 print(f'O dobro de {moeda.moeda(num)} é {moeda.moeda(moeda.dobro(num))}.')
 print(f'O preço aumentado em 10% é {moeda.moeda(moeda.aumentar(num, 10))}.')
 print(f'O preço diminuído em 37% é {moeda.moeda(moeda.diminuir(num, 37))}.')
+
+'''
+# Solução do Professor:
+
+p = float(input('Digite o preço: R$'))
+print(f'A metade de {moeda.moeda(p)} é {moeda.moeda(moeda.metade(p))}')
+print(f'O dobro de {moeda.moeda(p)} é {moeda.moeda(moeda.dobro(p))}')
+print(f'Aumentando 10%, temos {moeda.aumentar(p, 10)}')
+'''
