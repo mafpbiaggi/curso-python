@@ -16,4 +16,6 @@ print('=' * 60)
 print(f'{"Desafio 115":^60}')
 print('-' * 60)
 print(f'{sub:^60}')
-print('-' * 60)
+
+from menu import inicio
+inicio()

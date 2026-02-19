@@ -18,3 +18,6 @@ print(f'{"Desafio 114":^60}')
 print('-' * 60)
 print(f'{sub:^60}')
 print('-' * 60)
+
+import func
+func.checkSite('https://pudim.com.br')

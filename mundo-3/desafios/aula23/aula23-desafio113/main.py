@@ -17,9 +17,14 @@ ERRO: Por favor, digite um número inteiro válido (em vermelho).
 Deve haver exceção de interrupção e, caso nenhum dos valores seja inserido,
 o valor padrão deve ser 0.
 '''
+import func
 
 print('=' * 60)
 print(f'{"Desafio 113":^60}')
 print('-' * 60)
 print(f'{sub:^60}')
 print('-' * 60)
+
+num = func.leiaInt('\nDigite um número inteiro: ')
+numf = func.leiaFloat('Digite um número real: ')
+print(f'\nOs números informados foram {num} e {numf:.2f}')
